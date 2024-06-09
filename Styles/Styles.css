@@ -893,4 +893,85 @@ body {
   margin-right: 10%;
 }
 }
+@media only screen and (max-width: 915px){
+  html{
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  body{
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  /* .logo{
+    z-index: 0;
+    display: flex;
+    height: 100%;
+  
+  } */
+  .companyLogo{
+
+    z-index: 0;
+     left: -5%; 
+   
+    max-width: 20%;
+    max-height: 20%;
+    
+  }
+  .noLogo{
+    display: none;
+    /* z-index: 0;
+    right: -5%; 
+  
+   max-width: 20%;
+   max-height: 20%; */
+  }
+  .item{
+
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    font-size: 1.9rem;
+    /* border: 2px solid blue; */
+    right: -10%;
+  }
+  .socialIcons{
+    display: inline-block;
+    width:200%;
+    height: 200%;
+    margin-left: 12.9rem;
+    overflow: hidden;
+    /* border: 2px solid blue; */
+  }
+
+  .SixMonthInfo{
+  /* border: 2px solid blue; */
+    left: -300%;
+  }
+  .SixInfo{
+    width: 100%;
+    /* border: 2px solid red; */
+    margin-left: 17%;
+  }
+  .SixImage{
+    width: 100%;
+    
+  }
+  .courseImage{
+    width: 100%;
+  }
+  .homeCampusBox {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .campusDiv {
+    width: 80%;
+    left: 20%;
+    margin: 20px;
+    text-align: center;
+  }
+
+}
 /* Waldo's code ends */
