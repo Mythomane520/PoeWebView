@@ -186,23 +186,20 @@
 </body>
 </html>
 <!-- script for mail to -->
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-    function sendEmail(){
-        Email.send({
-        Host : "smtp.gmail.com",
-        Username : "Group2testamail123@gmail.com",
-        Password : "Group2XHAW",
-        To : 'Group2testamail123@gmail.com',
-        From : document.getElementById("email").value,
-        Subject : "New content from Empowering the Nation website.",
-        Body : "Name: " + document.getElementById("fullName").value
-        + "<br> Email: " + document.getElementById("email").value
-        + "<br> Phone No: " + document.getElementById("phoneNumber").value
-        + "<br> Message: " + document.getElementById("message").value
-        }).then(
-        message => alert("Message sent succesfully!")
-        );
+    <script>
+        function sendEmail() {
+            var fullName = document.getElementById('fullName').value;
+            var phoneNumber = document.getElementById('phoneNumber').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+            var mailto_link = 'mailto:Group2testamail123@gmail.com?subject=New content from Empowering the Nation website&body=' +
+                'Name: ' + encodeURIComponent(fullName) + '%0D%0A' +
+                'Email: ' + encodeURIComponent(email) + '%0D%0A' +
+                'Phone No: ' + encodeURIComponent(phoneNumber) + '%0D%0A' +
+                'Message: ' + encodeURIComponent(message);
+
+            window.location.href = mailto_link;
         }
-</script> 
-<!-- script for mail to  -->
+    </script>
+    <!-- script for mail to  -->
